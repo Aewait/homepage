@@ -35,6 +35,17 @@
           <Qq />
         </Icon>
       </a>
+      <a
+        id="travellings"
+        :href="socialLinks.qq"
+        target="_blank"
+        @mouseenter="changeTip"
+        @mouseleave="leaveTip"
+      >
+        <Icon size="24">
+          <Tarin />
+        </Icon>
+      </a>
       <!-- <a
         id="email"
         :href="socialLinks.email"
@@ -74,7 +85,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
-import { Github, Qq, Telegram, Twitter,GitSquare } from "@vicons/fa";
+import { Github, Qq, Telegram, Twitter,GitSquare,Tarin } from "@vicons/fa";
 import { EmailRound } from "@vicons/material";
 import { Icon } from "@vicons/utils";
 
@@ -88,6 +99,7 @@ let socialTipData = {
   email: "来封 Email",
   telegram: "你懂的 ~",
   twitter: "你懂的 ~",
+  travellings: "开往下一站"
 };
 
 // 社交链接地址
@@ -101,6 +113,7 @@ const socialLinks = reactive({
   email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
   telegram: "https://t.me/" + import.meta.env.VITE_SOCIAL_TELEGRAM,
   twitter: "https://twitter.com/" + import.meta.env.VITE_SOCIAL_TWITTER,
+  travellings: "https://www.travellings.cn/go.html"
 });
 
 // 鼠标移入移出事件
