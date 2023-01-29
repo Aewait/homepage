@@ -39,7 +39,8 @@ import {
   Book,
   Flask,
   GitSquare,
-  Image
+  Image,
+  GitAlt
 } from "@vicons/fa";
 
 // 网站链接数据
@@ -50,8 +51,8 @@ let linksData = [
     link: "https://blog.outpost54.top/",
   },
   {
-    icon: GitSquare,
-    name: "Gitee",
+    icon: GitAlt,
+    name: "Gitea",
     link: "https://gitee.com/ewait",
   },
   {
