@@ -37,7 +37,7 @@
       </a>
       <a
         id="travellings"
-        :href="socialLinks.qq"
+        :href="socialLinks.travellings"
         target="_blank"
         @mouseenter="changeTip"
         @mouseleave="leaveTip"
@@ -99,7 +99,7 @@ let socialTipData = {
   email: "来封 Email",
   telegram: "你懂的 ~",
   twitter: "你懂的 ~",
-  travellings: "开往下一站"
+  travellings: "开往下一站",
 };
 
 // 社交链接地址
@@ -113,7 +113,7 @@ const socialLinks = reactive({
   email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
   telegram: "https://t.me/" + import.meta.env.VITE_SOCIAL_TELEGRAM,
   twitter: "https://twitter.com/" + import.meta.env.VITE_SOCIAL_TWITTER,
-  travellings: "https://www.travellings.cn/go.html"
+  travellings: "https://www.travellings.cn/go.html",
 });
 
 // 鼠标移入移出事件
@@ -131,6 +131,9 @@ const changeTip = (e) => {
       return true;
     case "gitee":
       socialTip.value = socialTipData.gitee;
+      return true;
+    case "travellings":
+      socialTip.value = socialTipData.travellings;
       return true;
     case "telegram":
       socialTip.value = socialTipData.telegram;
