@@ -56,21 +56,6 @@ let linksData = [
     link: "https://gitee.com/ewait",
   },
   {
-    icon: CompactDisc,
-    name: "音乐",
-    link: "https://music.imsyy.top/",
-  },
-  {
-    icon: Compass,
-    name: "起始页",
-    link: "https://nav.imsyy.top/",
-  },
-  {
-    icon: Compass,
-    name: "起始页",
-    link: "https://nav.imsyy.top/",
-  },
-  {
     icon: Image,
     name: "图床",
     link: "https://web.imsyy.top/",
