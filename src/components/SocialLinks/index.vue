@@ -20,9 +20,9 @@
         @mouseenter="changeTip"
         @mouseleave="leaveTip"
       >
-        <Icon size="24">
-          <GitSquare />
-        </Icon>
+        <img 
+          src="/images/icon/gitee.ico" height="24px"
+        >
       </a>
       <a
         id="qq"
