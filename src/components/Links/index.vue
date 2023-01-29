@@ -66,6 +66,11 @@ let linksData = [
     link: "https://nav.imsyy.top/",
   },
   {
+    icon: Compass,
+    name: "起始页",
+    link: "https://nav.imsyy.top/",
+  },
+  {
     icon: Image,
     name: "图床",
     link: "https://web.imsyy.top/",
