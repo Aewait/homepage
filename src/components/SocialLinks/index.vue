@@ -14,6 +14,17 @@
         </Icon>
       </a>
       <a
+        id="gitee"
+        :href="socialLinks.gitee"
+        target="_blank"
+        @mouseenter="changeTip"
+        @mouseleave="leaveTip"
+      >
+        <Icon size="24">
+          <GitSquare />
+        </Icon>
+      </a>
+      <a
         id="qq"
         :href="socialLinks.qq"
         target="_blank"
@@ -24,7 +35,7 @@
           <Qq />
         </Icon>
       </a>
-      <a
+      <!-- <a
         id="email"
         :href="socialLinks.email"
         @mouseenter="changeTip"
@@ -55,7 +66,7 @@
         <Icon size="24">
           <Twitter />
         </Icon>
-      </a>
+      </a> -->
     </div>
     <span class="tip">{{ socialTip }}</span>
   </div>
