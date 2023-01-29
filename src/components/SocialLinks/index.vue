@@ -20,9 +20,9 @@
         @mouseenter="changeTip"
         @mouseleave="leaveTip"
       >
-        <img 
-          src="/images/icon/gitee.png" height="24"
-        />
+        <span class="xicon" style="font-size: 24px;">
+          <img src="/images/icon/gitee.png" height="24"/>
+        </span>
       </a>
       <a
         id="qq"
