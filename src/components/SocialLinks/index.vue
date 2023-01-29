@@ -63,7 +63,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
-import { Github, Qq, Telegram, Twitter } from "@vicons/fa";
+import { Github, Qq, Telegram, Twitter,GitSquare } from "@vicons/fa";
 import { EmailRound } from "@vicons/material";
 import { Icon } from "@vicons/utils";
 
@@ -72,6 +72,7 @@ let socialHover = ref(false);
 let socialTip = ref("通过这里联系我吧");
 let socialTipData = {
   github: "去 Github 看看",
+  gitee: "去 Gitee 看看",
   qq: "有什么事吗",
   email: "来封 Email",
   telegram: "你懂的 ~",
@@ -81,13 +82,14 @@ let socialTipData = {
 // 社交链接地址
 const socialLinks = reactive({
   github: "https://github.com/" + import.meta.env.VITE_SOCIAL_GITHUB,
+  gitee: "https://gitee.com/" + import.meta.env.VITE_SOCIAL_GITEE,
   qq:
     "https://wpa.qq.com/msgrd?v=3&uin=" +
     import.meta.env.VITE_SOCIAL_QQ +
     "&site=qq&menu=yes",
-  email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
-  telegram: "https://t.me/" + import.meta.env.VITE_SOCIAL_TELEGRAM,
-  twitter: "https://twitter.com/" + import.meta.env.VITE_SOCIAL_TWITTER,
+  // email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
+  // telegram: "https://t.me/" + import.meta.env.VITE_SOCIAL_TELEGRAM,
+  // twitter: "https://twitter.com/" + import.meta.env.VITE_SOCIAL_TWITTER,
 });
 
 // 鼠标移入移出事件
@@ -102,6 +104,9 @@ const changeTip = (e) => {
       return true;
     case "email":
       socialTip.value = socialTipData.email;
+      return true;
+    case "gitee":
+      socialTip.value = socialTipData.gitee;
       return true;
     case "telegram":
       socialTip.value = socialTipData.telegram;
