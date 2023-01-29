@@ -98,9 +98,9 @@ const socialLinks = reactive({
     "https://wpa.qq.com/msgrd?v=3&uin=" +
     import.meta.env.VITE_SOCIAL_QQ +
     "&site=qq&menu=yes",
-  // email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
-  // telegram: "https://t.me/" + import.meta.env.VITE_SOCIAL_TELEGRAM,
-  // twitter: "https://twitter.com/" + import.meta.env.VITE_SOCIAL_TWITTER,
+  email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
+  telegram: "https://t.me/" + import.meta.env.VITE_SOCIAL_TELEGRAM,
+  twitter: "https://twitter.com/" + import.meta.env.VITE_SOCIAL_TWITTER,
 });
 
 // 鼠标移入移出事件
