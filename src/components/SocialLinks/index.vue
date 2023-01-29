@@ -21,8 +21,8 @@
         @mouseleave="leaveTip"
       >
         <img 
-          src="/images/icon/gitee.ico" height="24px"
-        >
+          src="/images/icon/gitee.png" height="24"
+        />
       </a>
       <a
         id="qq"
