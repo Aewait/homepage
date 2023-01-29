@@ -38,6 +38,7 @@ import {
   Compass,
   Book,
   Flask,
+  GitSquare
 } from "@vicons/fa";
 
 // 网站链接数据
@@ -45,12 +46,12 @@ let linksData = [
   {
     icon: Blog,
     name: "博客",
-    link: "https://blog.imsyy.top/",
+    link: "https://blog.outpost54.top/",
   },
   {
-    icon: Cloud,
-    name: "网盘",
-    link: "https://pan.imsyy.top/",
+    icon: GitSquare,
+    name: "Gitee",
+    link: "https://gitee.com/ewait",
   },
   {
     icon: CompactDisc,
