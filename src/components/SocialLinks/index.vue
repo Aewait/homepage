@@ -43,7 +43,7 @@
         @mouseleave="leaveTip"
       >
         <Icon size="24">
-          <Tarin />
+          <Train />
         </Icon>
       </a>
       <!-- <a
@@ -85,7 +85,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
-import { Github, Qq, Telegram, Twitter,GitSquare,Tarin } from "@vicons/fa";
+import { Github, Qq, Telegram, Twitter,GitSquare,Train } from "@vicons/fa";
 import { EmailRound } from "@vicons/material";
 import { Icon } from "@vicons/utils";
 
