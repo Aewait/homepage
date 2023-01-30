@@ -16,17 +16,19 @@
         >
           {{ config.author }}
         </a></span
-      >&nbsp;&amp;
+      >
       <!-- 部署教程 -->
-      <span v-if="footerEnv.guide_page">
+      <span v-if="footerEnv.guide_page">&nbsp;&amp;
         <a :href="footerEnv.guide_page" target="_blank"
           >教程</a
-        >&nbsp;&amp;
+        >
       </span>
       <!-- 站点备案 -->
-      <a href="https://beian.miit.gov.cn" target="_blank"
-        >{{ footerEnv.icp }}</a
-      >
+      <span v-if="footerEnv.icp">&nbsp;&amp;
+        <a href="https://beian.miit.gov.cn" target="_blank"
+          >{{ footerEnv.icp }}</a
+        >
+      </span>
     </div>
     <div class="lrc" v-show="store.playerState">
       <music-one theme="filled" size="18" fill="#efefef" />
