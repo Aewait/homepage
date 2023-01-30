@@ -25,15 +25,15 @@
         </span>
       </a>
       <a
-        id="qq"
-        :href="socialLinks.qq"
+        id="kook"
+        :href="socialLinks.gitee"
         target="_blank"
         @mouseenter="changeTip"
         @mouseleave="leaveTip"
       >
-        <Icon size="24">
-          <Qq />
-        </Icon>
+        <span class="xicon" style="font-size: 24px;">
+          <img src="/images/icon/kook.png" height="24"/>
+        </span>
       </a>
       <a
         id="travellings"
@@ -46,6 +46,17 @@
           <Train />
         </Icon>
       </a>
+      <!-- <a
+        id="qq"
+        :href="socialLinks.qq"
+        target="_blank"
+        @mouseenter="changeTip"
+        @mouseleave="leaveTip"
+      >
+        <Icon size="24">
+          <Qq />
+        </Icon>
+      </a> -->
       <!-- <a
         id="email"
         :href="socialLinks.email"
@@ -95,6 +106,7 @@ let socialTip = ref("通过这里联系我吧");
 let socialTipData = {
   github: "去 Github 看看",
   gitee: "去 Gitee 看看",
+  kook: "来 kook 联系我",
   qq: "有什么事吗",
   email: "来封 Email",
   telegram: "你懂的 ~",
@@ -106,8 +118,8 @@ let socialTipData = {
 const socialLinks = reactive({
   github: "https://github.com/" + import.meta.env.VITE_SOCIAL_GITHUB,
   gitee: "https://gitee.com/" + import.meta.env.VITE_SOCIAL_GITEE,
-  qq:
-    "https://wpa.qq.com/msgrd?v=3&uin=" +
+  kook: import.meta.env.VITE_SOCIAL_KOOK,
+  qq: "https://wpa.qq.com/msgrd?v=3&uin=" +
     import.meta.env.VITE_SOCIAL_QQ +
     "&site=qq&menu=yes",
   email: "mailto:" + import.meta.env.VITE_SOCIAL_EMAIL,
@@ -131,6 +143,9 @@ const changeTip = (e) => {
       return true;
     case "gitee":
       socialTip.value = socialTipData.gitee;
+      return true;
+    case "kook":
+      socialTip.value = socialTipData.kook;
       return true;
     case "travellings":
       socialTip.value = socialTipData.travellings;
