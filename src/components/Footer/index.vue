@@ -1,9 +1,12 @@
 <template>
   <footer>
     <div class="power" v-show="!store.playerState">
+      <!-- 站点信息 -->
       <span
         >Copyright&nbsp;&copy;&nbsp;{{ fullYear }}
-        <a href="https://musnow.top">慕雪</a>
+        <a :href="site_url">
+          {{ author }}
+        </a>
       </span>
       <!-- 以下信息请不要修改哦 -->
       <span class="hidden"
@@ -14,9 +17,13 @@
           {{ config.author }}
         </a></span
       >&nbsp;&amp;
+      <!-- 部署教程 -->
+      <a :href="guide_page" target="_blank"
+        >教程</a
+      >&nbsp;&amp;
       <!-- 站点备案 -->
       <a href="https://beian.miit.gov.cn" target="_blank"
-        >豫ICP备2022018134号-1</a
+        >{{ icp }}</a
       >
     </div>
     <div class="lrc" v-show="store.playerState">
@@ -33,6 +40,10 @@
 import { MusicOne } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
 import config from "@/../package.json";
+var site_url = import.meta.env.VITE_SITE_URL;
+var guide_page = import.meta.env.VITE_FOOTER_GUIDE;
+var author = import.meta.env.VITE_FOOTER_AUTHER;
+var icp = import.meta.env.VITE_FOOTER_ICP;
 const store = mainStore();
 
 let fullYear = new Date().getFullYear();
