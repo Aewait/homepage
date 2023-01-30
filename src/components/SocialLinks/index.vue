@@ -31,7 +31,7 @@
       <span v-if="socialEnv.kook">
         <a
           id="kook"
-          :href="socialLinks.gitee"
+          :href="socialLinks.kook"
           target="_blank"
           @mouseenter="changeTip"
           @mouseleave="leaveTip"
