@@ -4,8 +4,8 @@
       <!-- 站点信息 -->
       <span
         >Copyright&nbsp;&copy;&nbsp;{{ fullYear }}
-        <a :href="site_url">
-          {{ author }}
+        <a :href="footerEnv.site_url">
+          {{ footerEnv.author }}
         </a>
       </span>
       <!-- 以下信息请不要修改哦 -->
@@ -18,12 +18,14 @@
         </a></span
       >&nbsp;&amp;
       <!-- 部署教程 -->
-      <a :href="guide_page" target="_blank"
-        >教程</a
-      >&nbsp;&amp;
+      <span v-if="footerEnv.guide_page">
+        <a :href="footerEnv.guide_page" target="_blank"
+          >教程</a
+        >&nbsp;&amp;
+      </span>
       <!-- 站点备案 -->
       <a href="https://beian.miit.gov.cn" target="_blank"
-        >{{ icp }}</a
+        >{{ footerEnv.icp }}</a
       >
     </div>
     <div class="lrc" v-show="store.playerState">
@@ -40,13 +42,15 @@
 import { MusicOne } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
 import config from "@/../package.json";
-var site_url = import.meta.env.VITE_SITE_URL;
-var guide_page = import.meta.env.VITE_FOOTER_GUIDE;
-var author = import.meta.env.VITE_FOOTER_AUTHER;
-var icp = import.meta.env.VITE_FOOTER_ICP;
 const store = mainStore();
 
 let fullYear = new Date().getFullYear();
+let footerEnv = {
+  site_url: import.meta.env.VITE_FOOTER_URL,
+  author: import.meta.env.VITE_FOOTER_AUTHER,
+  guide_page: import.meta.env.VITE_FOOTER_GUIDE,
+  icp: import.meta.env.VITE_FOOTER_ICP,
+}
 </script>
 
 <style lang="scss" scoped>
