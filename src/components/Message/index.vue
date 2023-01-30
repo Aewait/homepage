@@ -3,7 +3,7 @@
   <div class="message">
     <!-- Logo -->
     <div class="logo">
-      <img class="logo-img" src="/images/icon/myPNG-r.png" alt="logo" />
+      <img class="logo-img" :src="siteLogo" alt="logo" />
       <div class="name">
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>
@@ -37,6 +37,7 @@ const store = mainStore();
 
 // 站点链接
 let siteUrl = import.meta.env.VITE_SITE_URL.split(".");
+let siteLogo = import.meta.env.VITE_SITE_LOGO;
 
 // 简介区域文字
 let descriptionText = reactive({

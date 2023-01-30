@@ -96,7 +96,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
-import { Github, Qq, Telegram, Twitter,GitSquare,Train } from "@vicons/fa";
+import { Github, Qq, Telegram, Twitter,Train } from "@vicons/fa";
 import { EmailRound } from "@vicons/material";
 import { Icon } from "@vicons/utils";
 
