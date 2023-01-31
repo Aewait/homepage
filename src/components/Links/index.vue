@@ -38,7 +38,6 @@ import {
   Compass,
   Book,
   Flask,
-  GitSquare,
   Image,
   GitAlt
 } from "@vicons/fa";
@@ -64,6 +63,11 @@ let linksData = [
     icon: Flask,
     name: "Portainer",
     link: "https://lab.imsyy.top/",
+  },
+  {
+    icon: Book,
+    name: "Api",
+    link: "https://gitee.com/musnow/Kook-Valorant-Bot/blob/develop/docs/valorant-shop-img-api.md",
   },
 ];
 
