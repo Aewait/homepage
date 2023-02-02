@@ -50,16 +50,6 @@ let linksData = [
     link: "https://blog.outpost54.top/",
   },
   {
-    icon: GitAlt,
-    name: "Gitea",
-    link: "https://gitee.com/ewait",
-  },
-  {
-    icon: Image,
-    name: "图床",
-    link: "https://web.imsyy.top/",
-  },
-  {
     icon: Flask,
     name: "Portainer",
     link: "https://lab.imsyy.top/",
@@ -67,6 +57,11 @@ let linksData = [
   {
     icon: Book,
     name: "Api",
+    link: "https://gitee.com/musnow/Kook-Valorant-Bot/blob/develop/docs/valorant-shop-img-api.md",
+  },
+  {
+    icon: Compass,
+    name: "网址集",
     link: "https://gitee.com/musnow/Kook-Valorant-Bot/blob/develop/docs/valorant-shop-img-api.md",
   },
 ];
