@@ -46,7 +46,7 @@ let linksData = [
   {
     icon: Blog,
     name: "博客",
-    link: "https://blog.outpost54.top/",
+    link: "https://blog.musnow.top/",
   },
   {
     icon: Flask,
@@ -66,7 +66,7 @@ let linksData = [
   {
     icon: UserFriends,
     name: "友链",
-    link: "https://blog.outpost54.top/links/",
+    link: "https://blog.musnow.top/links/",
   },
 ];
 
