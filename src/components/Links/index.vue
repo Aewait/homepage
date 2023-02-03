@@ -33,13 +33,12 @@ import { Icon } from "@vicons/utils";
 import {
   Link,
   Blog,
-  CompactDisc,
-  Cloud,
   Compass,
   Book,
   Flask,
   Image,
-  GitAlt
+  GitAlt,
+  UserFriends
 } from "@vicons/fa";
 
 // 网站链接数据
@@ -62,7 +61,12 @@ let linksData = [
   {
     icon: Compass,
     name: "网址集",
-    link: "https://gitee.com/musnow/Kook-Valorant-Bot/blob/develop/docs/valorant-shop-img-api.md",
+    link: "http://web.musnow.top/",
+  },  
+  {
+    icon: UserFriends,
+    name: "友链",
+    link: "https://blog.outpost54.top/links/",
   },
 ];
 
