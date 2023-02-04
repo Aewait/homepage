@@ -62,6 +62,11 @@ let linksData = [
     icon: Compass,
     name: "网址集",
     link: "http://web.musnow.top/",
+  },
+  {
+    icon: Image,
+    name: "图床",
+    link: "https://img.musnow.top/",
   },  
   {
     icon: UserFriends,
