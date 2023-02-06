@@ -49,11 +49,6 @@ let linksData = [
     link: "https://blog.musnow.top/",
   },
   {
-    icon: Flask,
-    name: "Portainer",
-    link: "https://lab.imsyy.top/",
-  },
-  {
     icon: Book,
     name: "Api",
     link: "https://gitee.com/musnow/Kook-Valorant-Bot/blob/develop/docs/valorant-shop-img-api.md",
