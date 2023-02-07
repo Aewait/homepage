@@ -51,7 +51,7 @@ let linksData = [
   {
     icon: Book,
     name: "Api",
-    link: "https://gitee.com/musnow/Kook-Valorant-Bot/blob/develop/docs/valorant-shop-img-api.md",
+    link: "https://val.musnow.top/",
   },
   {
     icon: Compass,
