@@ -46,27 +46,27 @@ let linksData = [
   {
     icon: Blog,
     name: "博客",
-    link: "https://blog.musnow.top/",
+    link: "https://blog.musnow.top/?utm_source=main",
   },
   {
     icon: Book,
     name: "Api",
-    link: "https://val.musnow.top/",
+    link: "https://val.musnow.top/?utm_source=main",
   },
   {
     icon: Compass,
     name: "网址集",
-    link: "http://web.musnow.top/",
+    link: "http://web.musnow.top/?utm_source=main",
   },
   {
     icon: Image,
     name: "图床",
-    link: "https://img.musnow.top/",
+    link: "https://img.musnow.top/?utm_source=main",
   },  
   {
     icon: UserFriends,
     name: "友链",
-    link: "https://blog.musnow.top/links/",
+    link: "https://blog.musnow.top/links/?utm_source=main",
   },
 ];
 
