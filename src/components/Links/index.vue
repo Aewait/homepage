@@ -38,6 +38,7 @@ import {
   Flask,
   Image,
   GitAlt,
+  Adjust,
   UserFriends
 } from "@vicons/fa";
 
@@ -50,7 +51,7 @@ let linksData = [
   },
   {
     icon: Book,
-    name: "Api",
+    name: "瓦Api",
     link: "https://val.musnow.top/?utm_source=main",
   },
   {
@@ -67,6 +68,11 @@ let linksData = [
     icon: UserFriends,
     name: "友链",
     link: "https://blog.musnow.top/links/?utm_source=main",
+  },
+  {
+    icon: Adjust,
+    name: "服务状态页",
+    link: "https://stats.uptimerobot.com/Wl4KwU6Bzz",
   },
 ];
 
