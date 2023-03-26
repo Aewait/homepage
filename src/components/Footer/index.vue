@@ -15,8 +15,8 @@
           target="_blank"
         >
           {{ config.author }}
-        </a></span
-      >
+        </a>
+      </span>
       <!-- 部署教程 -->
       <span v-if="footerEnv.guide_page">&nbsp;&amp;
         <a :href="footerEnv.guide_page" target="_blank"
