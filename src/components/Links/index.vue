@@ -67,7 +67,7 @@ let linksData = [
   {
     icon: UserFriends,
     name: "友链",
-    link: "https://blog.musnow.top/links/?utm_source=main",
+    link: "https://blog.musnow.top/link/?utm_source=main",
   },
   {
     icon: Adjust,
