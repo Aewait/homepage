@@ -71,8 +71,8 @@ let linksData = [
   },
   {
     icon: Adjust,
-    name: "服务状态页",
-    link: "https://stats.uptimerobot.com/Wl4KwU6Bzz",
+    name: "服务状态",
+    link: "https://uptime.musnow.top/status/service",
   },
 ];
 
