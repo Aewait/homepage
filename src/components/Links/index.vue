@@ -61,8 +61,8 @@ let linksData = [
   },
   {
     icon: Image,
-    name: "图床",
-    link: "https://img.musnow.top/?utm_source=main",
+    name: "图床(关)",
+    link: "/",
   },  
   {
     icon: UserFriends,
