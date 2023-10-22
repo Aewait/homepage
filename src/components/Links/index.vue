@@ -51,8 +51,8 @@ let linksData = [
   },
   {
     icon: Book,
-    name: "瓦Api",
-    link: "https://val.musnow.top/?utm_source=main",
+    name: "WIKI",
+    link: "https://wiki.musnow.top/",
   },
   {
     icon: Compass,
@@ -72,7 +72,7 @@ let linksData = [
   {
     icon: Adjust,
     name: "服务状态",
-    link: "https://uptime.musnow.top/status/service",
+    link: "https://stats.uptimerobot.com/qrNpVSLkgV",
   },
 ];
 
