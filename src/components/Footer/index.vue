@@ -29,6 +29,13 @@
           >{{ footerEnv.icp }}</a
         >
       </span>
+      <!-- 公安备案 -->
+      <span>&nbsp;&amp;
+        <img src="/images/icon/gonganbeian.png" height="15"><a
+          href="https://beian.mps.gov.cn/#/query/webSearch?code=44190002007715" rel="noreferrer" target="_blank">
+          粤公网安备44190002007715
+        </a>
+      </span>
     </div>
     <div class="lrc" v-show="store.playerState">
       <music-one theme="filled" size="18" fill="#efefef" />
