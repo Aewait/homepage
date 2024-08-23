@@ -51,8 +51,8 @@ let linksData = [
   },
   {
     icon: Book,
-    name: "WIKI",
-    link: "https://wiki.musnow.top/",
+    name: "说说",
+    link: "https://memos.musnow.top/",
   },
   {
     icon: Compass,
@@ -60,9 +60,9 @@ let linksData = [
     link: "http://web.musnow.top/?utm_source=main",
   },
   {
-    icon: Image,
-    name: "图床(关)",
-    link: "/",
+    icon: GitAlt,
+    name: "Gitea",
+    link: "https://git.musnow.top/",
   },  
   {
     icon: UserFriends,
