@@ -32,11 +32,18 @@
 ### 部署
 
 ```bash
+# 如果yarn不存在，需要安装
+npm install -g yarn
+# 设置镜像源（淘宝）
+yarn config set registry https://registry.npmmirror.com/
+# yarn安装
 yarn install
 yarn dev
 yarn build
 ```
+
 > 构建完成后，可将 `dist` 文件夹下的文件上传至服务器，也可使用 `Vercel` 等托管平台一键导入并自动部署
+
 ### 天气
 
 天气及地区获取需要 `高德开放平台` 相关 API
