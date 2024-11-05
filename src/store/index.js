@@ -6,8 +6,8 @@ export const mainStore = defineStore("main", {
     state: () => {
         return {
             innerWidth: null, // 当前窗口宽度
-            coverType: "1", // 壁纸种类
-            musicIsOk: false, // 音乐是否加载完成
+            coverType: "0", // 壁纸种类
+            musicIsOk: true, // 音乐是否加载完成
             musicVolume: 0, // 音乐音量;
             musicOpenState: false, // 音乐面板开启状态
             backgroundShow: false, // 壁纸展示状态
