@@ -134,14 +134,6 @@ onMounted(() => {
       })
       .catch(() => {
         store.musicIsOk = false;
-        ElMessage({
-          message: "播放器加载失败",
-          grouping: true,
-          icon: h(PlayWrong, {
-            theme: "filled",
-            fill: "#efefef",
-          }),
-        });
       });
   });
 });
